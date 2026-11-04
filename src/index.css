@@ -854,7 +854,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .nl-form input[type='email']::placeholder { color: rgba(255, 255, 255, 0.65); }
 .nl-form input[type='email']:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.32); }
-.alt-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .nl-note { margin: 14px 0 0; font-size: 14.5px; }
 .nl-note--ok { color: #9ad6a8; }
 .nl-note--err { color: #ffb4a0; }
@@ -983,6 +982,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .nl-form .btn { justify-content: center; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .foot-brand { grid-column: 1 / -1; }
+  .foot-col li a, .foot-addr a { display: inline-block; padding: 6px 0; }
+  .foot-col ul { gap: 2px; }
+  .foot-social a { width: 42px; height: 42px; font-size: 16px; }
+  .foot-bottom { flex-direction: column; align-items: flex-start; }
   .reel-stage { aspect-ratio: 4 / 5; padding: 20px; }
   .reel-word { font-size: clamp(26px, 8vw, 40px); }
   .reel-line { font-size: 14px; }

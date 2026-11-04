@@ -30,12 +30,14 @@ None yet — everything shown on the page lives in `src/mocks/home.ts` and mirro
 
 ## 5. Backend / Third-party Integration Plan
 - Database: not needed for a one-page marketing site
-- Form: built-in Form endpoint for newsletter signups (`dblo86ube8r9umpno4ng`)
+- Form: newsletter signup opens an email to info@ea-sportnetwork.co.uk
 - Media: all photography generated in one dusk/amber art direction and served from the project CDN; hero film from the project CDN
-- Later: a client area would require connecting Readdy Backend or SaaS Supabase
+- Later: a client area would need a backend such as Supabase
 
 ## 6. Development Phase Plan
 ### Phase 1: One-page rebuild with original brand (done)
 ### Phase 2: Separate project pages for each case study, opened from the gallery
 ### Phase 3: Contact page with the enquiry form and studio details
 ### Phase 4: Journal / news posts
+## 7. Credits
+Designed and built by [creativedleading.co.uk](https://creativedleading.co.uk).
