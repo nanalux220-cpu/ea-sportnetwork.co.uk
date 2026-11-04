@@ -4,10 +4,10 @@ export default function Mission() {
       <div className="wrap mission-grid">
         <div className="mission-media" data-reveal>
           <img
-            src="https://readdy.ai/api/search-image?query=Professional%20drone%20equipment%20laid%20out%20on%20a%20dark%20slate%20workbench%2C%20spare%20propellers%2C%20batteries%2C%20controller%20and%20hard%20case%20arranged%20in%20a%20neat%20row%2C%20warm%20amber%20workshop%20light%20from%20the%20side%2C%20deep%20charcoal%20background%2C%20cinematic%20product%20photography%2C%20high%20detail%2C%20top%20down&width=1600&height=1067&seq=ea-mission-kit-a7&orientation=landscape"
-            alt="Aerial photography drone kit laid out before a flight"
-            width={1600}
-            height={1067}
+            src="/media/mission-kit.jpg"
+            alt="Close-up of a camera drone with its propellers spinning"
+            width={1280}
+            height={720}
             loading="lazy"
             decoding="async"
           />
