@@ -903,6 +903,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 13.5px;
   color: var(--muted);
 }
+.foot-credit a { color: var(--ink-soft); font-weight: 600; text-decoration: none; }
+.foot-credit a:hover { color: var(--accent); }
 .foot-social { display: flex; gap: 8px; }
 .foot-social a {
   width: 34px;

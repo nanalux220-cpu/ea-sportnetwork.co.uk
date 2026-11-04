@@ -56,6 +56,10 @@ export default function SiteFooter() {
 
         <div className="foot-bottom">
           <span>© {new Date().getFullYear()} E.A Sport Graphics · ea-sportnetwork.co.uk. All rights reserved.</span>
+          <span className="foot-credit">
+            Website by{' '}
+            <a href="https://creativedleading.co.uk" target="_blank" rel="noopener">creativedleading.co.uk</a>
+          </span>
           <div className="foot-social">
             {quickLinks.map((s) => (
               <a
