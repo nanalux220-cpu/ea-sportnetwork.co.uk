@@ -54,13 +54,13 @@ export default function Chapter() {
         />
         <div className="hero-veil" aria-hidden="true" />
         <div className="hero-inner">
-          <h1>E.A Sport Photography Service</h1>
+          <h1>Graphic design &amp; aerial photography</h1>
           <p className="hero-sub">
-            We bring brands to life through creative storytelling, cutting-edge design techniques, and strategic visual
-            communication.
+            E.A Sport Graphics brings brands to life through creative storytelling, cutting-edge design and striking
+            drone photography, from Leeds to clients worldwide.
           </p>
           <a className="btn" href="#about">
-            More info <i className="ri-arrow-right-line" />
+            Discover more <i className="ri-arrow-right-line" />
           </a>
         </div>
         <div className="hero-cue" aria-hidden="true"><span /></div>

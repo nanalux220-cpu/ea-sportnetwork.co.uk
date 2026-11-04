@@ -6,11 +6,11 @@ export default function About() {
       <div className="wrap about-grid">
         <div className="about-copy">
           <p className="eyebrow" data-reveal>Welcome</p>
-          <h2 data-reveal>About EA Sport Graphics</h2>
+          <h2 data-reveal>About E.A Sport Graphics</h2>
           <p className="body-lg" data-reveal>
-            E.A SPORTNETWORK is a premier graphic design company based in Leeds, United Kingdom, specializing in
-            innovative and visually compelling designs. We bring brands to life through creative storytelling,
-            cutting-edge design techniques, and strategic visual communication.
+            E.A Sport Graphics is a graphic design and aerial photography studio based in Leeds, United Kingdom,
+            specialising in innovative and visually compelling work. We bring brands to life through creative
+            storytelling, cutting-edge design techniques and strategic visual communication.
           </p>
           <p className="body-lg" data-reveal>
             From branding and logo design to digital graphics and marketing materials, we craft designs that captivate
@@ -27,7 +27,7 @@ export default function About() {
           </div>
 
           <a className="btn" href="#services" data-reveal>
-            Learn more <i className="ri-arrow-right-line" />
+            Explore our services <i className="ri-arrow-right-line" />
           </a>
         </div>
 

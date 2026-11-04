@@ -11,8 +11,8 @@ export default function WhyUs() {
             <h2 data-reveal>Why Choose Us</h2>
           </div>
           <p className="body-lg body-lg--on-dark" data-reveal>
-            we blend creativity with technology to deliver high-quality, bespoke design solutions tailored to your
-            unique vision. Whether you’re a startup, a growing business, or an established brand
+            We blend creativity with technology to deliver high-quality, bespoke design tailored to your vision,
+            whether you’re a startup, a growing business or an established brand.
           </p>
         </div>
 

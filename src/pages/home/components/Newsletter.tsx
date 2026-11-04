@@ -46,10 +46,10 @@ export default function Newsletter() {
       <div className="wrap nl-grid">
         <div className="nl-copy">
           <p className="eyebrow" data-reveal>Newsletter</p>
-          <h2 data-reveal>Subscribe our newsletter</h2>
+          <h2 data-reveal>Subscribe to our newsletter</h2>
           <p className="body-lg body-lg--on-dark" data-reveal>
-            we ensure your audience connects with your brand across digital and print platforms. Let’s bring your
-            vision to life with powerful storytelling!
+            Get design tips, new work and studio news straight to your inbox. Let’s bring your vision to life with
+            powerful storytelling.
           </p>
 
           <form id="ea-newsletter-form" data-readdy-form className="nl-form" onSubmit={onSubmit} data-reveal>
@@ -63,7 +63,7 @@ export default function Newsletter() {
               readOnly
             />
             <label htmlFor="nl-email" className="sr-only">Email address</label>
-            <input id="nl-email" type="email" name="email" required placeholder="Your Email Address" />
+            <input id="nl-email" type="email" name="email" required placeholder="Your email address" />
             <button type="submit" className="btn" disabled={status === 'sending'}>
               {status === 'sending' ? 'Sending…' : 'Subscribe'}
             </button>

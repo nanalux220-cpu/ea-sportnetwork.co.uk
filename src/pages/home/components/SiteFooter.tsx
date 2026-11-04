@@ -29,7 +29,7 @@ export default function SiteFooter() {
           </div>
 
           <div className="foot-col">
-            <h4>Quick Menu</h4>
+            <h4>Quick menu</h4>
             <ul>
               {footerMenu.map((l) => <li key={l.label}><a href={l.href}>{l.label}</a></li>)}
             </ul>
@@ -43,7 +43,7 @@ export default function SiteFooter() {
           </div>
 
           <div className="foot-col">
-            <h4>Contacts</h4>
+            <h4>Contact</h4>
             <p className="foot-addr">{contact.address}</p>
             <p className="foot-addr">
               <a href={`tel:${contact.phone}`}>{contact.phoneLabel}</a>
@@ -55,7 +55,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="foot-bottom">
-          <span>Copyright© 2023 Ea-Sportsnetwork - All Rights Reserved.</span>
+          <span>© {new Date().getFullYear()} E.A Sport Graphics · ea-sportnetwork.co.uk. All rights reserved.</span>
           <div className="foot-social">
             {quickLinks.map((s) => (
               <a
