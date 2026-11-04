@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
-const VIDEO = 'https://static.readdy.ai/video/0af12a1027d1d5372071bb53d7f5559b/e84beba43193bbcce2e47c08b10eee32.mp4';
-const COVER = 'https://static.readdy.ai/image/4428baccc60709cd2682246ca105b4f4/903c4f63e296a76f3516d3e7849d5727.jpeg';
+const VIDEO = '/media/hero.mp4';
+const COVER = '/media/hero-cover.jpg';
 
 export default function Chapter() {
   const stage = useRef<HTMLDivElement>(null);
@@ -46,11 +46,11 @@ export default function Chapter() {
         <img
           className="hero-plate"
           src={COVER}
-          width={1920}
-          height={1080}
+          width={1280}
+          height={720}
           fetchPriority="high"
           decoding="async"
-          alt="Aerial view of a coastline at dusk seen from a drone lifting off above the cliffs"
+          alt="Aerial drone view of waves breaking over dark rocks"
         />
         <div className="hero-veil" aria-hidden="true" />
         <div className="hero-inner">

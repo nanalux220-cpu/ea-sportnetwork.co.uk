@@ -40,10 +40,10 @@ export default function Newsletter() {
 
         <div className="nl-art" aria-hidden="true">
           <img
-            src="https://readdy.ai/api/search-image?query=A%20professional%20camera%20drone%20hovering%20in%20mid%20air%20against%20a%20deep%20charcoal%20dusk%20sky%2C%20rotors%20blurred%20in%20motion%2C%20warm%20amber%20highlights%20on%20the%20carbon%20body%2C%20distant%20coastal%20lights%20softly%20out%20of%20focus%20below%2C%20cinematic%20studio%20lighting%2C%20high%20detail%2C%20dramatic%20minimal%20composition&width=1200&height=850&seq=ea-newsletter-drone-a8&orientation=landscape"
+            src="/media/newsletter-drone.jpg"
             alt=""
-            width={1200}
-            height={850}
+            width={1280}
+            height={720}
             loading="lazy"
             decoding="async"
           />
