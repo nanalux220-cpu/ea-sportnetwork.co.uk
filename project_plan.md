@@ -31,7 +31,7 @@ None yet — everything shown on the page lives in `src/mocks/home.ts` and mirro
 ## 5. Backend / Third-party Integration Plan
 - Database: not needed for a one-page marketing site
 - Form: newsletter signup opens an email to info@ea-sportnetwork.co.uk
-- Media: all photography generated in one dusk/amber art direction and served from the project CDN; hero film from the project CDN
+- Media: photography in one dusk/amber art direction; hero film on the home page
 - Later: a client area would need a backend such as Supabase
 
 ## 6. Development Phase Plan
