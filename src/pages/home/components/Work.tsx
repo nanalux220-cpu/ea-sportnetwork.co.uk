@@ -8,11 +8,11 @@ export default function Work() {
     if (active === null) return undefined;
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setActive(null); };
     document.addEventListener('keydown', onKey);
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    const prev = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = prev;
+      document.documentElement.style.overflow = prev;
     };
   }, [active]);
 
@@ -27,11 +27,11 @@ export default function Work() {
             <h2 data-reveal>Our Latest Projects</h2>
           </div>
           <p className="body-lg" data-reveal>
-            we blend creativity with technology to deliver high-quality, bespoke design solutions tailored to your
-            unique vision. Whether you’re a startup, a growing business.
+            A selection of recent aerial photography, branding and motion work. Click any image to view it full
+            size.
           </p>
           <div className="work-head-cta" data-reveal>
-            <a className="btn" href="#contact">View all project <i className="ri-arrow-right-line" /></a>
+            <a className="btn" href="#contact">Start your project <i className="ri-arrow-right-line" /></a>
           </div>
         </div>
 

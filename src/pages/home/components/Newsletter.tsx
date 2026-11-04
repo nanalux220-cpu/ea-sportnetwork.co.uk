@@ -1,44 +1,18 @@
 import { useState, type FormEvent } from 'react';
 
-const SUBMIT = 'https://readdy.ai/api/form/dblo86ube8r9umpno4ng';
+const INBOX = 'info@ea-sportnetwork.co.uk';
 
 export default function Newsletter() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
-  const [formError, setFormError] = useState('');
+  const [sent, setSent] = useState(false);
 
-  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget;
-    const fd = new FormData(form);
-    const trap = String(fd.get('contact_alt') || '').trim();
-    if (trap) { setStatus('ok'); return; }
-    fd.delete('contact_alt');
-
-    setStatus('sending');
-    setFormError('');
-    try {
-      const body = new URLSearchParams();
-      fd.forEach((v, k) => body.append(k, String(v)));
-      const response = await fetch(SUBMIT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: body.toString(),
-      });
-      const responseText = await response.text();
-      let parsed: { code?: string; message?: string; meta?: { message?: string; detail?: string } } | null = null;
-      try { parsed = JSON.parse(responseText); } catch { parsed = null; }
-      const serverMsg = parsed?.meta?.message || parsed?.message || parsed?.meta?.detail || responseText;
-      if (response.ok && parsed?.code === 'OK' && !/spam/i.test(serverMsg || '')) {
-        setStatus('ok');
-        form.reset();
-      } else {
-        setStatus('error');
-        setFormError(serverMsg || 'Something went wrong. Please try again.');
-      }
-    } catch {
-      setStatus('error');
-      setFormError('Could not send right now. Please check your connection and try again.');
-    }
+    const email = String(new FormData(e.currentTarget).get('email') || '').trim();
+    if (!email) return;
+    const subject = encodeURIComponent('Newsletter signup');
+    const body = encodeURIComponent(`Please add ${email} to the E.A Sport Graphics newsletter.`);
+    window.location.href = `mailto:${INBOX}?subject=${subject}&body=${body}`;
+    setSent(true);
   };
 
   return (
@@ -46,30 +20,22 @@ export default function Newsletter() {
       <div className="wrap nl-grid">
         <div className="nl-copy">
           <p className="eyebrow" data-reveal>Newsletter</p>
-          <h2 data-reveal>Subscribe our newsletter</h2>
+          <h2 data-reveal>Subscribe to our newsletter</h2>
           <p className="body-lg body-lg--on-dark" data-reveal>
-            we ensure your audience connects with your brand across digital and print platforms. Let’s bring your
-            vision to life with powerful storytelling!
+            Get design tips, new work and studio news straight to your inbox. Let’s bring your vision to life with
+            powerful storytelling.
           </p>
 
-          <form id="ea-newsletter-form" data-readdy-form className="nl-form" onSubmit={onSubmit} data-reveal>
-            <input
-              type="text"
-              name="contact_alt"
-              className="alt-field"
-              tabIndex={-1}
-              autoComplete="off"
-              aria-hidden="true"
-              readOnly
-            />
+          <form id="ea-newsletter-form" className="nl-form" onSubmit={onSubmit} data-reveal>
             <label htmlFor="nl-email" className="sr-only">Email address</label>
-            <input id="nl-email" type="email" name="email" required placeholder="Your Email Address" />
-            <button type="submit" className="btn" disabled={status === 'sending'}>
-              {status === 'sending' ? 'Sending…' : 'Subscribe'}
-            </button>
+            <input id="nl-email" type="email" name="email" required placeholder="Your email address" />
+            <button type="submit" className="btn">Subscribe</button>
           </form>
-          {status === 'ok' && <p className="nl-note nl-note--ok">Thanks — you are subscribed.</p>}
-          {status === 'error' && <p className="nl-note nl-note--err">{formError}</p>}
+          {sent && (
+            <p className="nl-note nl-note--ok">
+              Thanks! Your email app should open so you can send your signup to {INBOX}.
+            </p>
+          )}
         </div>
 
         <div className="nl-art" aria-hidden="true">

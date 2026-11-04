@@ -10,8 +10,8 @@ export default function Services() {
             <h2 data-reveal>Our Services</h2>
           </div>
           <p className="body-lg" data-reveal>
-            We create unique and memorable brand identities that leave a lasting impression. we craft stunning visuals
-            that enhance your brand’s presence.
+            We create unique, memorable brand identities and stunning visuals that leave a lasting impression and
+            strengthen your brand’s presence.
           </p>
         </div>
 

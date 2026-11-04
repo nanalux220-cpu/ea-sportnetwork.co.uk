@@ -1,0 +1,8 @@
+node_modules/
+out/
+dist/
+.vercel/
+.env*
+auto-imports.d.ts
+*.log
+.DS_Store

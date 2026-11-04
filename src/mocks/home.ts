@@ -1,21 +1,23 @@
 export const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
+  { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
+  { href: '#locations', label: 'Location' },
 ];
 
 export const heroCards = [
   {
     title: 'Portfolio & Case Studies',
-    text: 'Each case study highlights our innovative approach, attention to detail, and client success stories',
+    text: 'Each case study highlights our innovative approach, attention to detail and the results we deliver for clients.',
   },
   {
     title: 'Branding Elements',
-    text: 'we craft strong and cohesive brand identities that leave a lasting impression. logos and visual assets',
+    text: 'We craft strong, cohesive brand identities, from logos to visual assets, that leave a lasting impression.',
   },
   {
     title: 'Content & Messaging',
-    text: 'we create engaging and impactful content that communicates your brand’s story effectively.',
+    text: 'We create engaging, impactful content that tells your brand’s story clearly and effectively.',
   },
 ];
 
@@ -30,39 +32,39 @@ export const whyUs = [
   {
     icon: 'ri-chat-quote-line',
     title: 'We Discuss',
-    text: 'we believe great designs start with great conversations. We take the time to understand your vision, goals',
+    text: 'Great design starts with a great conversation. We take the time to understand your vision, goals and audience.',
   },
   {
-    icon: 'ri-gamepad-line',
+    icon: 'ri-palette-line',
     title: 'We Create',
-    text: 'we transform ideas into stunning visuals that captivate and inspire. From branding to digital graphics.',
+    text: 'We transform ideas into stunning visuals that captivate and inspire, from branding to digital graphics.',
   },
   {
-    icon: 'ri-computer-line',
+    icon: 'ri-rocket-2-line',
     title: 'We Produce',
-    text: 'we deliver high-quality, professionally crafted designs that make an impact. From digital content to print materials.',
+    text: 'We deliver high-quality, professionally crafted work that makes an impact, from digital content to print.',
   },
 ];
 
 export const services = [
   {
     title: 'Graphic Design',
-    text: 'we craft stunning visuals that enhance your brand’s presence.',
+    text: 'Stunning visuals that strengthen your brand’s presence.',
     img: 'https://readdy.ai/api/search-image?query=Graphic%20design%20studio%20desk%20seen%20from%20above%20with%20printed%20brand%20boards%2C%20colour%20swatches%2C%20type%20specimens%20and%20pencils%20arranged%20on%20a%20dark%20concrete%20surface%2C%20warm%20lamp%20light%2C%20deep%20charcoal%20and%20amber%20palette%2C%20cinematic%20editorial%20photography%2C%20high%20detail%2C%20minimal%20composition&width=900&height=1200&seq=ea-svc-design-a3&orientation=portrait',
   },
   {
     title: 'AeroView',
-    text: 'Capturing breathtaking aerial shots that elevate your projects',
+    text: 'Breathtaking aerial shots that elevate your projects.',
     img: 'https://readdy.ai/api/search-image?query=Aerial%20photograph%20looking%20straight%20down%20over%20a%20winding%20coastal%20road%20between%20dark%20cliffs%20and%20turquoise%20surf%2C%20a%20tiny%20car%20casting%20a%20long%20shadow%2C%20dusk%20light%20with%20warm%20amber%20glow%20on%20the%20rocks%2C%20cinematic%20drone%20photography%2C%20deep%20charcoal%20shadows%2C%20high%20detail%2C%20abstract%20minimal%20composition&width=900&height=1200&seq=ea-svc-aerial-a4&orientation=portrait',
   },
   {
     title: 'Motion Graphics',
-    text: 'Bringing visuals to life with engaging animations, storytelling.',
+    text: 'Visuals brought to life with engaging animation and storytelling.',
     img: 'https://readdy.ai/api/search-image?query=Long%20exposure%20light%20trails%20of%20traffic%20curving%20through%20a%20dark%20city%20intersection%20at%20night%2C%20warm%20amber%20and%20orange%20streaks%20against%20deep%20charcoal%20buildings%2C%20cinematic%20motion%20graphic%20still%2C%20high%20detail%2C%20glossy%20reflections%20on%20wet%20asphalt%2C%20editorial%20photography&width=900&height=1200&seq=ea-svc-motion-a5&orientation=portrait',
   },
   {
     title: 'Logo Design',
-    text: 'We create unique and memorable brand identities',
+    text: 'Unique, memorable marks that define your brand.',
     img: 'https://readdy.ai/api/search-image?query=Close%20up%20of%20a%20designer%20sketching%20geometric%20logo%20marks%20in%20a%20black%20sketchbook%20with%20an%20orange%20pencil%20on%20a%20dark%20desk%2C%20half%20finished%20monogram%20grids%20visible%2C%20warm%20amber%20desk%20lamp%20light%2C%20deep%20charcoal%20shadows%2C%20cinematic%20editorial%20photography%2C%20high%20detail%2C%20shallow%20depth%20of%20field&width=900&height=1200&seq=ea-svc-logo-a6&orientation=portrait',
   },
 ];

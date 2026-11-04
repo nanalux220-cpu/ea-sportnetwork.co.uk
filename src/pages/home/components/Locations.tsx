@@ -6,13 +6,19 @@ export default function Locations() {
       <div className="wrap loc-grid">
         <div className="loc-copy">
           <p className="eyebrow" data-reveal>Locations</p>
-          <h2 data-reveal>London locations</h2>
+          <h2 data-reveal>Where to find us</h2>
           <p className="body-lg" data-reveal>
-            Each case study highlights our innovative approach, attention to detail, and client success stories,
-            demonstrating how we transform ideas in Leeds
+            Our studio is based in Leeds and our office address is at 42-44 Bishopsgate in London. We work with
+            clients across the UK and worldwide, online and on location.
           </p>
-          <a className="btn" href="#contact" data-reveal>
-            View all location <i className="ri-arrow-right-line" />
+          <a
+            className="btn"
+            href="https://www.google.com/maps/search/?api=1&query=42-44%20Bishopsgate%2C%20London%20EC2N%204AH"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-reveal
+          >
+            Get directions <i className="ri-arrow-right-line" />
           </a>
         </div>
 
@@ -26,7 +32,7 @@ export default function Locations() {
           />
           <div className="loc-card">
             <div>
-              <strong>London</strong>
+              <strong>London office</strong>
               <p>{contact.address}</p>
             </div>
             <span className="loc-pin" aria-hidden="true"><i className="ri-map-pin-2-fill" /></span>

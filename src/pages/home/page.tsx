@@ -18,8 +18,11 @@ export default function Home() {
   const [menu, setMenu] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = menu ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    // Lock scrolling on <html>, not <body>: locking <body> turns it into its own
+    // scroll box, which breaks the sticky header and hides the menu off-screen.
+    const root = document.documentElement;
+    root.style.overflow = menu ? 'hidden' : '';
+    return () => { root.style.overflow = ''; };
   }, [menu]);
 
   return (

@@ -14,14 +14,14 @@ export default function Mission() {
         </div>
         <div className="mission-copy">
           <p className="eyebrow" data-reveal>Mission</p>
-          <h2 data-reveal>Our Graphics</h2>
+          <h2 data-reveal>Aerial photography that stands out</h2>
           <p className="body-lg" data-reveal>
-            offers high-quality aerial photography services, capturing stunning visuals from unique perspectives.
-            Whether for real estate, events, sports, or commercial projects, our aerial shots deliver breathtaking
-            clarity and creativity, helping your brand stand out.
+            E.A Sport Graphics offers high-quality aerial photography, capturing stunning visuals from unique
+            perspectives. Whether for real estate, events, sports or commercial projects, our aerial shots deliver
+            breathtaking clarity and creativity that help your brand stand out.
           </p>
           <a className="btn" href="#contact" data-reveal>
-            Learn more <i className="ri-arrow-right-line" />
+            Book a shoot <i className="ri-arrow-right-line" />
           </a>
         </div>
       </div>
