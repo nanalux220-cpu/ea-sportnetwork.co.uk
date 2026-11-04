@@ -39,6 +39,7 @@ img { max-width: 100%; height: auto; }
 ::selection { background: var(--accent); color: #fff; }
 
 .wrap { width: 100%; max-width: 1280px; margin: 0 auto; }
+section[id], footer[id] { scroll-margin-top: 66px; }
 .sec { padding: clamp(64px, 8vw, 116px) clamp(20px, 5vw, 64px); }
 .sec--muted { background: var(--paper-2); }
 .sec--about { border-top: 1px solid var(--line); }
@@ -163,6 +164,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   padding: 10px 20px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   background: var(--dark);
+  max-height: calc(100svh - 70px);
+  overflow-y: auto;
 }
 .nav-mobile a {
   padding: 12px 0;
