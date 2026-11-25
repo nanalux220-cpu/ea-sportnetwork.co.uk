@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <header className="site-head nav">
         <div className="head-inner">
-          <a href="#home" className="brand" aria-label="E.A Sport Graphics home">
+          <a href="#home" className="brand" aria-label="EA-Sports Network home">
             <BrandMark tone="light" />
           </a>
 
