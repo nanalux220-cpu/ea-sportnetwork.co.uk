@@ -10,7 +10,7 @@ export default function Newsletter() {
     const email = String(new FormData(e.currentTarget).get('email') || '').trim();
     if (!email) return;
     const subject = encodeURIComponent('Newsletter signup');
-    const body = encodeURIComponent(`Please add ${email} to the E.A Sport Graphics newsletter.`);
+    const body = encodeURIComponent(`Please add ${email} to the EA-Sports Network newsletter.`);
     window.location.href = `mailto:${INBOX}?subject=${subject}&body=${body}`;
     setSent(true);
   };

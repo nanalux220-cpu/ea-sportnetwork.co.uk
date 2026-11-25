@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 export default function NotFound() {
   useEffect(() => {
-    document.title = 'Page not found | E.A Sport Graphics';
+    document.title = 'Page not found | EA-Sports Network';
   }, []);
 
   return (

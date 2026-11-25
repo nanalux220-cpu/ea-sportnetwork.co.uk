@@ -56,7 +56,7 @@ export default function Chapter() {
         <div className="hero-inner">
           <h1>Graphic design &amp; aerial photography</h1>
           <p className="hero-sub">
-            E.A Sport Graphics brings brands to life through creative storytelling, cutting-edge design and striking
+            EA-Sports Network brings brands to life through creative storytelling, cutting-edge design and striking
             drone photography, from Leeds to clients worldwide.
           </p>
           <a className="btn" href="#about">

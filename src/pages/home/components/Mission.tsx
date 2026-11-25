@@ -16,7 +16,7 @@ export default function Mission() {
           <p className="eyebrow" data-reveal>Mission</p>
           <h2 data-reveal>Aerial photography that stands out</h2>
           <p className="body-lg" data-reveal>
-            E.A Sport Graphics offers high-quality aerial photography, capturing stunning visuals from unique
+            EA-Sports Network offers high-quality aerial photography, capturing stunning visuals from unique
             perspectives. Whether for real estate, events, sports or commercial projects, our aerial shots deliver
             breathtaking clarity and creativity that help your brand stand out.
           </p>

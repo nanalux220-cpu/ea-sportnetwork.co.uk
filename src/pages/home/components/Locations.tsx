@@ -24,7 +24,7 @@ export default function Locations() {
 
         <div className="loc-map" data-reveal>
           <iframe
-            title="Map showing the E.A Sport Graphics office at 42-44 Bishopsgate, London"
+            title="Map showing the EA-Sports Network office at 42-44 Bishopsgate, London"
             src="https://www.google.com/maps?q=42-44%20Bishopsgate%2C%20London%20EC2N%204AH&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
