@@ -19,7 +19,7 @@ export default function SiteFooter() {
       <div className="wrap">
         <div className="foot-grid">
           <div className="foot-brand">
-            <a href="#home" aria-label="E.A Sport Graphics home">
+            <a href="#home" aria-label="EA-Sports Network home">
               <BrandMark />
             </a>
             <p>

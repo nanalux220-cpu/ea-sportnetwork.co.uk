@@ -117,9 +117,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   padding: 14px clamp(18px, 4vw, 56px);
 }
 .brand { display: flex; align-items: center; flex-shrink: 0; }
-.brandmark-img { display: block; width: auto; height: 38px; }
-.brandmark-img--dark { filter: brightness(0) saturate(100%); opacity: 0.92; }
-.brandmark-img--light { filter: none; }
+.brandmark-img { display: block; width: auto; height: 36px; max-width: 100%; }
 .nav-links { display: flex; align-items: center; gap: 32px; margin-left: auto; }
 .nav-links a {
   position: relative;
