@@ -2,7 +2,7 @@ import { footerMenu, footerServices, contact } from '@/mocks/home';
 import BrandMark from '@/components/feature/BrandMark';
 
 const quickLinks = [
-  { icon: 'ri-mail-line', label: 'Email E.A Sport Graphics', href: `mailto:${contact.email}`, external: false },
+  { icon: 'ri-mail-line', label: 'Email EA-Sports Network', href: `mailto:${contact.email}`, external: false },
   { icon: 'ri-phone-line', label: 'Call 07707 066972', href: `tel:${contact.phone}`, external: false },
   { icon: 'ri-whatsapp-line', label: 'Message on WhatsApp', href: 'https://wa.me/447707066972', external: true },
   {
@@ -55,7 +55,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="foot-bottom">
-          <span>© {new Date().getFullYear()} E.A Sport Graphics · ea-sportnetwork.co.uk. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} EA-Sports Network · ea-sportnetwork.co.uk. All rights reserved.</span>
           <span className="foot-credit">
             Website by{' '}
             <a href="https://creativedleading.co.uk" target="_blank" rel="noopener">creativedleading.co.uk</a>

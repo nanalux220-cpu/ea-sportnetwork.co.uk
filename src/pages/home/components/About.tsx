@@ -6,9 +6,9 @@ export default function About() {
       <div className="wrap about-grid">
         <div className="about-copy">
           <p className="eyebrow" data-reveal>Welcome</p>
-          <h2 data-reveal>About E.A Sport Graphics</h2>
+          <h2 data-reveal>About EA-Sports Network</h2>
           <p className="body-lg" data-reveal>
-            E.A Sport Graphics is a graphic design and aerial photography studio based in Leeds, United Kingdom,
+            EA-Sports Network is a graphic design and aerial photography studio based in Leeds, United Kingdom,
             specialising in innovative and visually compelling work. We bring brands to life through creative
             storytelling, cutting-edge design techniques and strategic visual communication.
           </p>

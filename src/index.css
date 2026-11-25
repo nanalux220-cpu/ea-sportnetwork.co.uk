@@ -10,9 +10,13 @@
   --ink-soft: #3a3d44;
   --muted: #5f636b;
   --line: #e5e2dd;
-  --accent: #ff5a1f;
-  --accent-dark: #e8460e;
-  --accent-soft: #ffeee6;
+  /* Brand colours taken from the EA-Sports Network logo */
+  --accent: #9f1239;
+  --accent-dark: #7f0e2d;
+  --accent-soft: #fbe9ee;
+  --gold: #e5b769;
+  --brand-ink: #2b0a14;
+  --accent-text: var(--accent);
   --dark: #16181c;
   --dark-2: #23262c;
   --dark-line: rgba(255, 255, 255, 0.14);
@@ -42,7 +46,7 @@ img { max-width: 100%; height: auto; }
 section[id], footer[id] { scroll-margin-top: 66px; }
 .sec { padding: clamp(64px, 8vw, 116px) clamp(20px, 5vw, 64px); }
 .sec--muted { background: var(--paper-2); }
-.sec--about { border-top: 1px solid var(--line); }
+.sec--about { border-top: 0; }
 
 .eyebrow {
   margin: 0 0 12px;
@@ -51,7 +55,7 @@ section[id], footer[id] { scroll-margin-top: 66px; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 h2 {
   margin: 0 0 22px;
@@ -173,7 +177,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
-.nav-mobile a:last-child { color: var(--accent); border-bottom: 0; }
+.nav-mobile a:last-child { color: var(--gold); border-bottom: 0; }
 
 /* HERO */
 .hero {
@@ -320,7 +324,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-family: var(--font-heading);
   font-size: clamp(26px, 2.8vw, 36px);
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-text);
   line-height: 1.1;
   letter-spacing: -0.03em;
 }
@@ -363,11 +367,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   background:
     repeating-linear-gradient(to right, var(--grid-line) 0 1px, transparent 1px 96px),
     repeating-linear-gradient(to bottom, var(--grid-line) 0 1px, transparent 1px 96px),
-    radial-gradient(60% 70% at 15% 0%, rgba(255, 90, 31, 0.26), transparent 62%),
+    radial-gradient(60% 70% at 15% 0%, rgba(159, 18, 57, 0.26), transparent 62%),
     radial-gradient(50% 60% at 90% 100%, rgba(255, 255, 255, 0.05), transparent 65%);
   pointer-events: none;
 }
 .why .wrap { position: relative; z-index: 2; }
+.why, .newsletter, .site-head, .reel-stage, .nf { --accent-text: var(--gold); }
 .why-head {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
@@ -388,10 +393,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: 54px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 90, 31, 0.45);
+  border: 1px solid rgba(229, 183, 105, 0.45);
   border-radius: 50%;
-  background: rgba(255, 90, 31, 0.1);
-  color: var(--accent);
+  background: rgba(229, 183, 105, 0.08);
+  color: var(--accent-text);
   font-size: 24px;
 }
 .why-col h3 {
@@ -420,7 +425,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   padding: clamp(20px, 3vw, 40px);
   isolation: isolate;
   background:
-    radial-gradient(70% 90% at 78% 18%, rgba(255, 90, 31, 0.28), transparent 62%),
+    radial-gradient(70% 90% at 78% 18%, rgba(159, 18, 57, 0.28), transparent 62%),
     linear-gradient(135deg, #191b1e 0%, #0a0b0c 62%, #1a1512 100%);
 }
 .reel-shot {
@@ -485,7 +490,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: rgba(255, 255, 255, 0.82);
 }
 .reel-tag { display: inline-flex; align-items: center; gap: 7px; }
-.reel-tag i { font-size: 14px; color: var(--accent); animation: reel-blink 1.9s steps(1) infinite; }
+.reel-tag i { font-size: 14px; color: var(--gold); animation: reel-blink 1.9s steps(1) infinite; }
 @keyframes reel-blink {
   0%, 55% { opacity: 1; }
   56%, 100% { opacity: 0.18; }
@@ -499,7 +504,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .reel-word {
   margin: 0;
@@ -719,7 +724,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: 34px;
   border-radius: 50%;
   background: var(--accent-soft);
-  color: var(--accent);
+  color: var(--accent-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -736,25 +741,33 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 .work-head h2 { margin-bottom: 0; max-width: 16ch; }
 .work-head p { margin: 0; align-self: end; }
-.work-grid { column-count: 3; column-gap: clamp(12px, 1.5vw, 20px); }
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: clamp(180px, 19vw, 280px);
+  gap: clamp(12px, 1.5vw, 20px);
+}
+/* Feature the first project as a large tile; the rest fill a tidy, even grid */
+.work-item:first-child { grid-column: span 2; grid-row: span 2; }
 .work-item {
   position: relative;
   display: block;
   width: 100%;
-  margin: 0 0 clamp(12px, 1.5vw, 20px);
+  height: 100%;
+  margin: 0;
   padding: 0;
   border: 0;
   background: var(--paper-3);
   border-radius: 4px;
   overflow: hidden;
-  break-inside: avoid;
   cursor: pointer;
   line-height: 0;
 }
 .work-item img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.5s ease;
 }
 .work-hover {
@@ -826,7 +839,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   background:
     repeating-linear-gradient(to right, var(--grid-line) 0 1px, transparent 1px 96px),
     repeating-linear-gradient(to bottom, var(--grid-line) 0 1px, transparent 1px 96px),
-    radial-gradient(55% 70% at 8% 10%, rgba(255, 90, 31, 0.26), transparent 60%),
+    radial-gradient(55% 70% at 8% 10%, rgba(159, 18, 57, 0.26), transparent 60%),
     radial-gradient(45% 60% at 95% 90%, rgba(255, 255, 255, 0.05), transparent 65%);
   pointer-events: none;
 }
@@ -854,7 +867,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .nl-form input[type='email']::placeholder { color: rgba(255, 255, 255, 0.65); }
-.nl-form input[type='email']:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255, 90, 31, 0.32); }
+.nl-form input[type='email']:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(229, 183, 105, 0.32); }
 .nl-note { margin: 14px 0 0; font-size: 14.5px; }
 .nl-note--ok { color: #9ad6a8; }
 .nl-note--err { color: #ffb4a0; }
@@ -948,7 +961,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 @media (max-width: 1080px) {
   .nav-links { gap: 24px; }
   .svc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .work-grid { column-count: 2; }
+  .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: clamp(170px, 30vw, 260px); }
+  .work-item:first-child { grid-column: auto; grid-row: auto; }
   .work-head { grid-template-columns: 1fr 1fr; }
   .work-head-cta { grid-column: 1 / -1; }
   .foot-grid { grid-template-columns: 1.6fr 1fr 1fr; }
@@ -965,7 +979,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .about-media { order: -1; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .reel-stage { aspect-ratio: 4 / 3; padding: 24px; }
-  .nl-art { order: -1; }
 }
 @media (max-width: 620px) {
   .hero { height: min(88svh, 620px); }
@@ -977,9 +990,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .hero-inner { justify-content: flex-end; padding-bottom: 72px; }
   .svc-grid { grid-template-columns: 1fr; }
   .svc { aspect-ratio: 4 / 3; }
-  .work-grid { column-count: 1; }
+  .work-grid { grid-auto-rows: 42vw; }
   .work-head { grid-template-columns: 1fr; }
   .nl-form { flex-direction: column; }
+  .nl-art { display: none; }
   .nl-form .btn { justify-content: center; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .foot-brand { grid-column: 1 / -1; }
@@ -1012,7 +1026,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 .nf h1 { margin: 0; font-size: clamp(24px, 3vw, 34px); font-weight: 500; }
 .nf p { margin: 0 0 10px; max-width: 46ch; color: rgba(255, 255, 255, 0.8); }

@@ -18,7 +18,7 @@ export default function Services() {
         <div className="svc-grid">
           {services.map((s) => (
             <a className="svc" href="#contact" key={s.title} data-reveal>
-              <img src={s.img} alt={`${s.title} — E.A Sport Graphics service`} loading="lazy" decoding="async" />
+              <img src={s.img} alt={`${s.title} — EA-Sports Network service`} loading="lazy" decoding="async" />
               <span className="svc-shade" aria-hidden="true" />
               <span className="svc-body">
                 <span className="svc-title">{s.title}</span>

@@ -44,7 +44,7 @@ export default function Work() {
               onClick={() => setActive(i)}
               aria-label={`Open ${p.title}`}
             >
-              <img src={p.img} alt={`${p.title} — aerial photography by E.A Sport Graphics`} loading="lazy" decoding="async" />
+              <img src={p.img} alt={`${p.title} — aerial photography by EA-Sports Network`} loading="lazy" decoding="async" />
               <span className="work-hover" aria-hidden="true"><i className="ri-zoom-in-line" /></span>
             </button>
           ))}
@@ -57,7 +57,7 @@ export default function Work() {
             <i className="ri-close-line" />
           </button>
           <figure className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <img src={current.img} alt={`${current.title} — E.A Sport Graphics`} />
+            <img src={current.img} alt={`${current.title} — EA-Sports Network`} />
           </figure>
         </div>
       )}
